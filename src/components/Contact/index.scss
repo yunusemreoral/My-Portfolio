@@ -1,0 +1,146 @@
+
+.contact-form{
+    width: 100%;
+    margin-top: 20px;
+    
+
+    ul{
+        padding: 0;
+        margin: 0;
+
+        li{
+           padding: 0;
+           margin: 0;
+           list-style: none;
+           margin-bottom: 10px;
+           overflow: hidden;
+           display: block;
+           position: relative;
+           opacity: 0;
+           animation: fadeInUp 2s 2s;
+           animation-fill-mode: forwards;
+           clear: both;
+        }
+
+        li.half{
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        border: 0;
+        background: #fff;
+        height: 50px;
+        font-size: 16px;
+        color: gray;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    textarea{
+        width: 100%;
+        border: 0;
+        background: #fff;
+        height: 50px;
+        font-size: 16px;
+        color: gray;
+        padding: 20px;
+        min-height: 150px;
+    }
+
+    .flat-button{
+        color: #ffd700;
+        background: 0 0;
+        font: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 1px solid #ffd700;
+        float: right;
+        border-radius: 4px;
+
+        &:hover{
+            background: #ffd700;
+            color: #000;
+        }
+    }
+}
+
+.container .contact-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-left: 200px;
+}
+
+.left{
+    flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .container.contact-page{
+        flex-direction: column;
+    }
+}
+
+.contact-details-right{
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 20px;
+    margin-top: 360px;
+    margin-right: 200px;
+
+    .info-card{
+        border: 1px solid #ffd700;
+        padding: 20px;
+        align-items: center;
+        border-radius: 12px;
+        text-align: center;
+        transition:  all 0.3s ease;
+        animation: fadeInUp 1s ease forwards;
+        opacity: 0;
+
+        &:nth-child(1) {
+            animation-delay: 0.5s;
+            color: black;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        i{
+            font-size: 24px;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        h4{
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 5px;
+            cursor: pointer;
+            &:hover{
+                color: black;
+            }
+        }
+
+        p{
+            color: #ffd700;
+            font-size: 16px;
+            
+        }
+    }
+}
