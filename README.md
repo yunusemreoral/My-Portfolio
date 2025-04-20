@@ -1,6 +1,6 @@
 # My-Portfolio 🚀
 
-<li>Frontend | React Developer olarak kendimi tanıttığım portfolio web sitesidr.</li>
+<li>Frontend | React Developer olarak kendimi tanıttığım portfolio web sitesidir.</li>
 <li>Home,About,Contact sayfaları mevcuttur.</li>
 
 # Kullanılan Teknolojiler 🎨
